@@ -1,39 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <!-- 1. How do you reverse an array in JavaScript? -->
 
 <script>
 
-const arr = [1,2,3,4,5,6];
-// const reversearr = arr.reverse();
-// document.write(reversearr);
-  
-//  <!-- Using a loop  -->
+  const arr = [1, 2, 3, 4, 5, 6];
+  // const reversearr = arr.reverse();
+  // document.write(reversearr);
+
+  //  <!-- Using a loop  -->
 
   const reverse = [];
-  for (let i = arr.length -1 ; i >=0;i--){
+  for (let i = arr.length - 1; i >= 0; i--) {
     reverse.push(arr[i]);
   }
-    document.write(reverse);
+  document.write(reverse);
 
 
 
 
+  // ✅ 2. How do you find the largest/smallest number in an array?
 
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const Max = Math.max(...numbers);
+  const Min = Math.min(...numbers);
+  document.write(Max);
+  document.write(Min);
 
-
-
-
-
-  </script>
+</script>
