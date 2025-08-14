@@ -1,13 +1,14 @@
-// write a code to remove duplicate using for loop
+const myPromise = new Promise(function(resolve, reject){
+  let fileLoader = false;
+  if(fileLoader){
+    resolve("file is loaded");
+  } else {
+    reject("file is not loaded");
+  }
+});
 
-let arr = [1, 2, 3, 4, 5, 1, 2, 3];
+myPromise.then(function(value){
+  console.log(value)
 
-function removeDuplicates(arr) {
-    let uniqueArray = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (!uniqueArray.includes(arr[i])) {
-            uniqueArray.push(arr[i]);
-        }
-    }
-    return uniqueArray;
-}
+}).catch(error => console.log(error))
+

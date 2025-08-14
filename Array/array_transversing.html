@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+let data = [8,9,5,3,6,3,2,1,7]
+// Tranversing
+// for(let i =0 ; i<data.length;i++){
+//     document.write(`Array ${[i]} is ${data[i]} <br>`)
+// }
+
+// Accessing
+// let x =8;
+// document.write(data[x])
+
+function getElement(){
+let el = document.getElementById("element").value;
+
+if(el ===""){
+alert("please enter a number")
+}
+else if
+(el<data.length && typeof parseInt(el) =="number")
+{
+alert( data[el])
+}
+
+else
+{
+    alert("please enter valid number")
+}
+
+}
+
+</script>
+
+<body>
+    <input type="text" id="element" placeholder="Enter index">
+<input type="button" value="Enter" onclick="getElement()">
+</body>
+</html>
