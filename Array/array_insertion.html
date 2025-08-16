@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr = [1,3,4,5,6,8,9,0,2];
+// newEle= 20;
+// position = 2;
+newEle = document.getElementById("newEle").value;
+position = document.getElementById("position").value
+// for(let i = arr.length-1; i >=position;i--){
+//   arr[i+1] = arr[i]
+// }
+// arr[position] = newEle
+// document.write(arr)
+
+function addElement(){
+
+
+
+    for(let i = arr.length-1; i >=position;i--){
+        arr[i+1] = arr[i]
+    }
+
+ 
+    arr[position] = newEle;
+    alert("Array after insertion: " + arr);
+}
+
+
+
+</script>
+<body>
+<input type="text" id="newEle" placeholder="enter the number">
+<input type="text" id="position" placeholder="enter the position">
+<input type="button" value="Insert" onclick="addElement()">
+
+</body>
+</html>
