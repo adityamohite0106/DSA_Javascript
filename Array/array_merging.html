@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+arr1 = [1, 2, 3];
+arr2 = [4, 5, 6];
+
+// Using the spread operator ...
+mergedArr = [...arr1 ,...arr2]
+
+// document.write(mergedArr)
+
+
+// Using push() with the spread operator
+ mergedArr2 = arr1.push(...arr2);
+
+document.write( mergedArr2);
+
+// Using concat()
+mergedArr3 = arr1.concat(arr2);
+document.write(mergedArr3);
+
+// Using the spread operator with additional elements
+mergedArr4 = [0, ...arr1, ...arr2, 7];
+document.write(mergedArr4);
+
+// Example using a for loop adding 2 arrys in 3rd:
+
+array1 = [1,2,3,54,67,7]
+array2 = [94,4,3,6,89,0]
+array3 = [];
+
+for (let i = 0 ; i= array1.length; i++){
+    array3.push(array1[i])
+}
+
+for (let i = 0 ; i = array2.length; i++){
+    array3.push(array2[i])
+}
+
+console.log(array3)
+</script>
+<body>
+    
+</body>
+</html>
